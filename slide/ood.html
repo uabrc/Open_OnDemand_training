@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - my slides</title>
+		<title>UAB-IT: Research computing</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -60,13 +60,16 @@
                 <section>
                     <div class="content-wrapper">
                       <h3 style="color:green" data-id="code-title">Interactive Applications</h3>
-                      <p class="description-text">Common Interactive Applications:</p>
                       <div class="side-by-side">
                         <div class="text-content">
                           <ul>
-                            <li>HPC Desktop</li>
-                            <li>Jupyter Notebook</li>
-                            <li>RStudio Server</li>
+                            <li> Common Interactive Applications:</li>
+                            <ul>
+                              <li>HPC Desktop</li>
+                              <li>Jupyter Notebook</li>
+                              <li>RStudio Server</li>
+                              <li>MATLAB</li>
+                            </ul>
                           </ul>
                         </div>
                         <div class="image-content">
@@ -92,6 +95,20 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+
+        width: 1920, // width of the slide text
+        height: 1024, // hight of the slide text
+
+        // Factor of the display size that should remain empty around
+        // the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0,
+        markdown: {
+                smartypants: true
+              },
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
