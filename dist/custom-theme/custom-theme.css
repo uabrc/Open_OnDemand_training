@@ -1,0 +1,58 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column; 
+  text-align: center; 
+}
+
+.description-header {
+  margin-bottom: 10px;
+}
+
+.description-text {
+  margin-bottom: 20px; 
+  width: 100%;
+  text-align: left; 
+}
+
+/* side by side styles.css */
+.side-by-side {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+/* Style for text content */
+.text-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Style for image content */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+/* link to main pag e*/
+.top-left-link {
+  position: fixed; /* fixed positioning */
+  top: 10px;
+  left: 10px;
+  background: #09c2f0;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000; /* check it is on top */
+  box-shadow: 0 0 5px rgba(11, 237, 226, 0.3); /* effect for better visibility */
+}
+.top-left-link a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Set text color if needed */
+}
