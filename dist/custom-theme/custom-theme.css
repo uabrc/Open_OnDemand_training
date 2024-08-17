@@ -22,9 +22,6 @@
   justify-content: space-between;
   gap: 40px;
 }
-
-
-
 /* Style for text content */
 .text-content {
   flex: 1;
@@ -44,6 +41,7 @@
   height: auto;
   display: block; 
 }
+
 
 /* link to main page css formatting*/
 .top-left-link {
