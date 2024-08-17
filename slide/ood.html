@@ -1,119 +1,206 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>UAB-IT: Research computing</title>
+    <title>UAB-IT: Research computing</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="../dist/reset.css">
-		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../dist/theme/sky.css">
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/sky.css">
     <link rel="stylesheet" href="../plugin/highlight/highlight.js">
 
     <link rel="stylesheet" href="../dist/custom-theme/custom-theme.css"> 
 
-	</head>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3 style="color:green">Outline</h3>
+                <ul>
+                    <li>About Open OnDemand</li>
+                    <li>Connecting/login to Open OnDemand</li>
+                    <li>Open OnDemand Dashboard</li>
+                    <li>Launching Interactive Applications:</li>
+                    <ul>
+                        <li>HPC Desktop</li>
+                        <li>Jupyter Notebook</li>
+                        <li>RStudio Server</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </ul>
+            </section>
+           
+            <section>
+                <h3 style="color:green">What is OOD?</h3>
+                <ul>
+                    <li>OOD is a user-friendly web interface for managing and interacting with HPC resources.
+                    </li>
+                    <li> Visit: <a href="https://rc.uab.edu/pun/sys/dashboard">https://rc.uab.edu/pun/sys/dashboard</a></li>
+                    <li>Key Features</li>
+                    <ul style="font-size: 22px;">
+                        <li><b>Interactive Applications</b>: Run graphical applications and use computing resources through the browser.</li>
+                        <li><b>Job Management</b>: Submit, monitor, and manage HPC jobs.</li>
+                        <li><b>File Management</b>: Access and manage files on remote systems.</li>
+                    </ul>
+                    <li>Why use Open OnDemand?</li>
+                    <ul style="font-size: 22px;">
+                        <li><b>Ease of Use</b>: Simplifies complex HPC tasks with a user-friendly interface.</li>
+                        <li><b>Accessibility</b>: Access HPC resources from anywhere with a web browser.</li>
+                    </ul>
+                    <img src="image/ood-logo.png" alt="Italian Trulli" width="150" height="auto">
+                </ul>
+            </section>
+    
+            <section>
+                <h3 style="color:green">Connect to Open OnDemand?</h3>
+                <ul>
+                    <li>To connect, visit <a href="https://rc.uab.edu/">https://rc.uab.edu/</a>, authenticate with Single Sign-On (SSO).
+                    </li>
+                </ul>
+                <div class="r-stack">
+                    <img src="image/odd-dashboard.png" width="auto" height="auto" class="fragment">
+                    <img src="image/ood-dashboard-2.png" width="auto" height="auto" class="fragment">
+                </div>
+            </section>
 
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section>
-                  <h3 style="color:green">Outline</h3>
-                        <ul>
-                            <li>Connecting/login to Open OnDemand</li>
-                            <li>Open OnDemand Dashboard</li>
-                            <li>Launching Interactive Applications:</li>
+            <section>
+                <h3 style="color:green">Open OnDemand Dashboard</h3>
+                <div class="r-stack" style="position: relative; height: 100px;">
+                    <p class="fragment fade-in-then-out" data-fragment-index="1" style="text-align: left;"><b>Files</b>: allow one to view and operate on files available on the cheaha.</p>
+                    <p class="fragment fade-in-then-out" data-fragment-index="2" style="text-align: left;"><b>Jobs</b>: allow to create, edit, submit, and monitor jobs on cheaha cluster.</p>
+                    <p class="fragment fade-in-then-out" data-fragment-index="3" style="text-align: left;"><b>Clusters</b>: provides access to the shell on login nodes.</p>
+                    <p class="fragment fade-in-then-out" data-fragment-index="4" style="text-align: left;"><b>Interactive Apps</b>: allow to explore interactive apps on Cheaha and lunch job using the preferred app.</p>
+                </div>
+                <div class="r-stack">
+                    <img src="image/file.png" width="auto" height="auto" class="fragment" data-fragment-index="1">
+                    <img src="image/job.png" width="auto" height="auto" class="fragment" data-fragment-index="2">
+                    <img src="image/cluster.png" width="auto" height="auto" class="fragment" data-fragment-index="3" >
+                    <img src="image/interactive-apps.png" width="auto" height="auto" class="fragment" data-fragment-index="4">
+                </div>
+            </section>
+
+            <section>
+                <h4 style="color:green">Open OnDemand Dashboard: File Menu</h4>
+                <img src="image/file-home-menu.png" width="auto" height="auto" class="fragment">
+                
+                <div class="r-stack">
+                    <ol class="custom-list fragment" style="font-size: 22px;">
+                        <li><span>1</span> Current working directory</li>
+                        <li><span>2</span>Control bars for working with files </li>
+                        <li><span>3</span> Control bars for working with the files browser</li>
+                        <li><span>4</span> Delete button: Click this button if you want to delete a file or folder</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h4 style="color:green">Open OnDemand Dashboard: Interactive Apps</h4>
+                <div class="r-stack">
+                    <img src="image/interactive-hpc-desktop.png" width="auto" height="auto" class="fragment" data-fragment-index="1">
+                    <img src="image/interactive-jupyter.png" width="auto" height="auto" class="fragment" data-fragment-index="4">
+                </div>
+                <ul  style="font-size: 26px;">
+                    <li class="fragment" data-fragment-index="2"> Complete the fields  with resource tailored to your job requirements.</li>
+                    <li  class="fragment" data-fragment-index="3"> Then click on the blue Launch button</li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="content-wrapper">
+                    <h3 style="color:green" data-id="code-title">Interactive Applications</h3>
+                    <ul>
+                        <li> Common Interactive Applications on Cheaha:</li>
+                    <ul>
+                    <div class="side-by-side">
                             <ul>
                                 <li>HPC Desktop</li>
-                                <li>Jupyter Notebook</li>
-                                <li>Rstudio Server</li>
+                                <li>Jupyter Notebook </li>
+                                <li>RStudio Server</li>
                                 <li>MATLAB</li>
                             </ul>
-                        </ul>
-                </section>
-                
-                <section>
-                    <h3 style="color:green">What is OOD?</h3>
-                    <ul>
-                      <li>OOD is a user-friendly web interface for managing and interacting with HPC resources.
-                      </li>
-                      <li> Visit: <a href="https://rc.uab.edu/pun/sys/dashboard">https://rc.uab.edu/pun/sys/dashboard</a></li>
-                      <li>Key Features</li>
-                      <ul style="font-size: 22px;">
-                        <li><b>Interactive Applications</b>: Run graphical applications and 
-                          use computing resources through the browser.</li>
-                          <li><b>Job Management</b>: Submit, monitor, and manage HPC jobs.</li>
-                          <li><b>File Management</b>: Access and manage files on remote systems.</li>
-                      </ul>
-                      <li>Why use Open OnDemand?</li>
-                      <ul style="font-size: 22px;">
-                        <li><b>Ease of Use</b>: Simplifies complex HPC tasks with a user-friendly interface.</li>
-                          <li><b>Accessibility</b>: Access HPC resources from anywhere with a web browser.</li>
-                      </ul>
-                    
-                    <img src="image/ood-logo.png" alt="Italian Trulli" width="150" height="auto">
-                  </ul>
-                </section>
-
-                <section>
-                    <div class="content-wrapper">
-                      <h3 style="color:green" data-id="code-title">Interactive Applications</h3>
-                      <div class="side-by-side">
-                        <div class="text-content">
-                          <ul>
-                            <li> Common Interactive Applications:</li>
-                            <ul>
-                              <li>HPC Desktop</li>
-                              <li>Jupyter Notebook</li>
-                              <li>RStudio Server</li>
-                              <li>MATLAB</li>
-                            </ul>
-                          </ul>
-                        </div>
-                        <div class="image-content">
-                          <img src="image/interactiv-apps.png" alt="Descriptive Image">
-                        </div>
-                      </div>
+                    <div class="image-content">
+                        <img src="image/interactive-app.png" alt="Descriptive Image" width="auto" height="auto">
                     </div>
-                  </section>
-            </div>
+                </div>
+            </section>
+
+            <section>
+                <h4 style="color:green">Launching Interactive Sessions: HPC Desktop</h4>
+                <ul style="font-size: 26px;">
+                    <li>Select an <b>HPC Desktop</b> interactive app, complete the form fields, and click the blue Launch button.</li>  
+                    <img src="image/interactive-hpc-desktop-launch.png" width="auto" height="auto">
+                </ul>
+            </section>
+
+             <section>
+                <h4 style="color:green" data-id="code-title">Launching Interactive Sessions: HPC Desktop</h4>
+                <ul>
+                    <li>Interactive session will be initiated and passes through: Queued, Starting and Running</li>
+                <ul>
+                <div class="r-stack">
+                    <img src="image/queue.png" width="auto" height="auto" class="fragment" data-fragment-index="1">
+                    <img src="image/starting.png" width="auto" height="auto" class="fragment" data-fragment-index="2">
+                    <img src="image/running.png" width="auto" height="auto" class="fragment" data-fragment-index="3" >
+                </div>  
+                <div class="r-stack" style="font-size: 26px; position: relative; height: 100px;">
+                    <p class="fragment fade-in-then-out" data-fragment-index="1" style="text-align: left;"><b>Queued</b>: When the blue Launch button clicked the job state will change to Queued</p>
+                    <p class="fragment fade-in-then-out" data-fragment-index="2" style="text-align: left;"><b>Starting</b>: After the resources are allocated, the job state will change to Starting.</p>
+                    <p class="fragment fade-in-then-out" data-fragment-index="3" style="text-align: left;"><b>Running</b>: Once the job is launched on the compute nodes, the state will switch to Running.</p>
+                </div>         
+            </section>
+
+            <section>
+                <h4 style="color:green" data-id="code-title">Launching Interactive Sessions: HPC Desktop</h4>
+                <div class="r-stack">
+                      <img src="image/running.png" width="auto" height="auto" class="fragment" data-fragment-index="1" style="max-width: 100%; height: auto; width: 50%;" >
+                </div>  
+                <div class="r-stack" style="font-size: 26px; position: relative; height: 100px;">
+                    <p class="fragment fade-in-then-out" data-fragment-index="1" style="text-align: left;"><b>Running</b>: Once the job is launched on the compute nodes, the state will switch to Running.</p>
+                </div>         
+            </section>
+        
         </div>
-
-    <!-- Link to the index/main page-->
-    <div class="top-left-link">
-      <a href="../index.html" target="_self">^ Index Page</a>
     </div>
-		<script src="../dist/reveal.js"></script>
-		<script src="../plugin/notes/notes.js"></script>
-		<script src="../plugin/markdown/markdown.js"></script>
-		<script src="../plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
 
-        width: 1920, // width of the slide text
-        height: 1024, // hight of the slide text
+    <!-- Link to the index/main page
+    <div class="top-left-link">
+        <a href="../index.html" target="_self">^ Index Page</a>
+    </div>
+    -->
+    <script src="../dist/reveal.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/ and  https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
 
-        // Factor of the display size that should remain empty around
-        // the content
-        margin: 0.1,
+            width: 1024, // width of the slide text, 1920
+            height: 700, // hight of the slide text, 1024
 
-        // Bounds for smallest/largest possible scale to apply to content
-        minScale: 0.2,
-        maxScale: 2.0,
-        markdown: {
-                smartypants: true
-              },
+            // Factor of the display size that should remain empty around
+            // the content
+            margin: 0.04, //0.04
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-    </body>
-    
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 2.0,
+            markdown: {
+                    smartypants: true
+                    },
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+        });
+    </script>
+   
+</body>
+
 </html>

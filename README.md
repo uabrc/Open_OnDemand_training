@@ -32,4 +32,4 @@ To export your slides as a PDF:
 
 - Open your presentation in a web browser.
 - Add `?print-pdf` to the end of the browser's address bar. For example, `http://localhost:1948/slide/ood.html` becomes `http://localhost:1948/slide/ood.html?print-pdf`.
-- Press `Ctrl+P` (Windows) or `Cmd+P` (Mac) to print the presentation as a `PDF`.
+- Press `Ctrl+P` (Windows) or `Cmd+P` (Mac) to export the presentation as a `PDF`.

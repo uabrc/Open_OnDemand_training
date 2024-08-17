@@ -1,3 +1,4 @@
+/* used to format the side by side images and texts*/
 .content-wrapper {
   display: flex;
   flex-direction: column; 
@@ -19,7 +20,10 @@
   display: flex;
   align-items: center; 
   justify-content: space-between;
+  gap: 40px;
 }
+
+
 
 /* Style for text content */
 .text-content {
@@ -41,7 +45,7 @@
   display: block; 
 }
 
-/* link to main pag e*/
+/* link to main page css formatting*/
 .top-left-link {
   position: fixed; /* fixed positioning */
   top: 10px;
@@ -55,4 +59,42 @@
 .top-left-link a {
   text-decoration: none; /* Remove underline */
   color: #000; /* Set text color if needed */
+}
+
+
+/* styles.css for custom ordered list*/
+ol.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  column-gap: 20px; /* Space between columns */
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-left: 40px; /* Adjust to accommodate the circle */
+  display: flex;
+  align-items: center;
+}
+
+.custom-list li span {
+  counter-increment: list-item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px; /* Circle size */
+  height: 30px; /* Circle size */
+  border-radius: 50%;
+  background-color: green; /* Filled circle color */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 30px; /* Match height for vertical centering */
+  text-align: center;
 }
