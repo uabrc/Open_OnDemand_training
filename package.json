@@ -1,0 +1,11 @@
+{ 
+  "name": "ood_uab",
+  "version": "1.0.0",
+  "description": "it is based on Reveal.js presentation",
+  "dependencies": {
+    "reveal.js": "^5.1.0"
+  },
+  "scripts": {
+    "start": "reveal-md slide/ood.html"
+  }
+}

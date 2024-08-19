@@ -1,0 +1,98 @@
+/* used to format the side by side images and texts*/
+.content-wrapper {
+  display: flex;
+  flex-direction: column; 
+  text-align: center; 
+}
+
+.description-header {
+  margin-bottom: 10px;
+}
+
+.description-text {
+  margin-bottom: 20px; 
+  width: 100%;
+   
+}
+
+/* side by side styles.css */
+.side-by-side {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  gap: 40px;
+}
+/* Style for text content */
+.text-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Style for image content */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
+/* link to main page css formatting*/
+.top-left-link {
+  position: fixed; /* fixed positioning */
+  top: 10px;
+  left: 10px;
+  background: #09c2f0;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000; /* check it is on top */
+  box-shadow: 0 0 5px rgba(11, 237, 226, 0.3); /* effect for better visibility */
+}
+.top-left-link a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Set text color if needed */
+}
+
+
+/* styles.css for custom ordered list*/
+ol.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  column-gap: 20px; /* Space between columns */
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-left: 40px; /* Adjust to accommodate the circle */
+  display: flex;
+  align-items: center;
+}
+
+.custom-list li span {
+  counter-increment: list-item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px; /* Circle size */
+  height: 30px; /* Circle size */
+  border-radius: 50%;
+  background-color: green; /* Filled circle color */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 30px; /* Match height for vertical centering */
+  text-align: center;
+}
