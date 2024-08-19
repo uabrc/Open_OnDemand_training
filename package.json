@@ -6,6 +6,6 @@
     "reveal.js": "^5.1.0"
   },
   "scripts": {
-    "start": "reveal-md index.html"
+    "start": "reveal-md slide/ood.html"
   }
 }
