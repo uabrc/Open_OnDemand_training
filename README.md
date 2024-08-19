@@ -13,7 +13,9 @@ Hands-on training material for getting started with Open OnDemand on Cheaha, inc
   - Open the presentation/slides in a web browser.
   - Add `?print-pdf` to the end of the browser's address bar. For example, `http://localhost:1948/slide/ood.html` becomes `http://localhost:1948/slide/ood.html?print-pdf`.
   - Press `Ctrl+P` (Windows) or `Cmd+P` (Mac) to export the presentation as a `PDF`.
+  
 ==========================================
+
 - **To update/contribute contents, formats**, etc:
   - You can open the cloned repository in your terminal.
     - Navigate to the **ood_training** folder.
